@@ -36,6 +36,8 @@ elseif nargin == 3 %送信波中心周波数：2 MHz以外
             tof_map = calc_threshold(rfdata, dt, t_num, r_num,165);%2018/08/12(realistic_model)
         case 1000
             tof_map = calc_threshold(rfdata, dt, t_num, r_num,82+2/3);%2018/08/12(realistic_model)
+        case 2000
+            tof_map = calc_threshold(rfdata, dt, t_num, r_num,43);%2018/08/12(realistic_model)
         otherwise
             error('Designated Freqency is invalid.')
     end

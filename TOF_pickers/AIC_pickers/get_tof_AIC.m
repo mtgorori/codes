@@ -41,7 +41,7 @@ for transmit_i = 1:t_num
     window_end = window_center + window_size_half;
     
     for receive_j = 1:t_num
-        if abs(transmit_i - receive_j) <=3 
+        if abs(transmit_i - receive_j) <=3
             continue
         end
         scan_region = curr_rfdata_extent(window_start(receive_j):window_end(receive_j),receive_j);

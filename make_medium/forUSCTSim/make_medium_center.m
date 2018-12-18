@@ -33,5 +33,5 @@ figure;
 imagesc(medium.sound_speed);
 figure;
 imagesc(medium.density);
-cd('\\Azlab-fs01\“ŒŒ¤‹†º\ŒÂlwork\’|“à(‚Ğ)\USCTSim-master')
+cd('H:USCTSim-master')
 save('medium_04_center','medium')

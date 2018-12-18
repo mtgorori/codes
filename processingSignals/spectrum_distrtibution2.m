@@ -1,7 +1,7 @@
 function spectrum_distrtibution2( case_number,medium_path,save_path )
 close all
 
-cd('//Azlab-fs01/“ŒŒ¤‹†º/ŒÂlwork/’|“à(‚Ğ)/data/configration')
+cd('H:data/configration')
 load('transducer_2board.mat')
 
 %‰Šúİ’è

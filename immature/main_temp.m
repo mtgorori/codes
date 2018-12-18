@@ -11,14 +11,14 @@ load('kgrid.mat');
 load('sensor.mat');
 rfdata_wa = rfdata;
 clear rfdata;
-cd('\\Azlab-fs01\“ŒŒ¤‹†º\ŒÂlwork\’|“à(‚Ğ)\codes');
+cd('H:codes');
 tof_map = get_tof_AIC(rfdata_ob,rfdata_wa,kgrid.mat,sensor.mat,75);
-cd('\\Azlab-fs01\“ŒŒ¤‹†º\ŒÂlwork\’|“à(‚Ğ)\result');  
+cd('H:result');  
 save('tof_map_win_150_right_shift_2board.mat','tof_map');
 projection = tof_map;
-cd('\\Azlab-fs01\“ŒŒ¤‹†º\ŒÂlwork\’|“à(‚Ğ)\codes');
+cd('H:codes');
 [us,RMSE] = SART_reconstruction_2board(projection);
-cd('\\Azlab-fs01\“ŒŒ¤‹†º\ŒÂlwork\’|“à(‚Ğ)\result'); 
+cd('H:result'); 
 save('SART_recon_2board_right_shifted_20mm_kwave.mat','us','RMSE');
 clear
 
