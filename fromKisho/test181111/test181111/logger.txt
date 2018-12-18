@@ -1,0 +1,7 @@
+$ [main] line:4                | -------------------------------------
+$ [main] line:5                | This is test program of logger
+$ [main] line:6                | date: 13-Nov-2018 13:35:45
+$ [main] line:7                | -------------------------------------
+$ [main] line:14               | Nice to meet you
+$ [main] line:15               | My name is John Lennon.
+$ [main] line:16               | I am 23 years old and 174.520000 cm tall
