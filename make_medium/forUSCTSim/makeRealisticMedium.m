@@ -72,12 +72,12 @@ if location == 1
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 
 if location == 2
@@ -107,12 +107,12 @@ if location == 2
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 
 if location == 3
@@ -141,12 +141,12 @@ if location == 3
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 
 if location == 4
@@ -173,12 +173,12 @@ if location == 4
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 if location == 5
     frame_y5 = 840;
@@ -204,12 +204,12 @@ if location == 5
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 if location == 6
     frame_y5 = 800;
@@ -235,12 +235,12 @@ if location == 6
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 if location == 7
     frame_y5 = 850;
@@ -266,12 +266,12 @@ if location == 7
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 
 if location == 8
@@ -298,12 +298,12 @@ if location == 8
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 if location == 9
     frame_x15 = 3600;%x方向のフレーム数(15 cm相当)
@@ -332,12 +332,12 @@ if location == 9
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 
 if location == 10
@@ -367,12 +367,12 @@ if location == 10
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 
 if location == 11
@@ -401,12 +401,12 @@ if location == 11
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 if location == 12
     frame_y5 = 650;
@@ -464,12 +464,12 @@ if location == 13
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 
 if location == 14
@@ -496,12 +496,12 @@ if location == 14
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 
 if location == 15
@@ -528,12 +528,12 @@ if location == 15
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 
 if location == 16
@@ -560,12 +560,12 @@ if location == 16
     %     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) /
     %     numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2,:))) * 100;%2018/10/09以前
     rateEMCL = (sum(sum(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) / numel(bwImg(Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2+1,:))) * 100;
-    medium.density = ones(Ny, Nx) * baseDensity;
-    medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
-    baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
-    baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
-    medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
-    medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
+%     medium.density = ones(Ny, Nx) * baseDensity;
+%     medium.sound_speed = ones(Ny, Nx) * baseSoundSpeed;
+%     baseDensity = (den_muscle + (den_fat - den_muscle)*rateIMCL/(100-rateEMCL));
+%     baseSoundSpeed = (v_muscle + (v_fat - v_muscle)*rateIMCL/(100-rateEMCL));
+%     medium.density(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * den_fat + ~bwImg * baseDensity;
+%     medium.sound_speed(:,Nx/2-ROI.Nx/2+1:Nx/2+ROI.Nx/2) = bwImg * v_fat + ~bwImg * baseSoundSpeed;
 end
 
 end
