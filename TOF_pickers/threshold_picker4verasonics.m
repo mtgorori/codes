@@ -25,12 +25,16 @@ function tof_map = calc_threshold(rfdata, dt, t_num, r_num, offset)
 rfdata_abs = abs(rfdata);
 threshold_map = max(rfdata_abs)/50;
 threshold_map = reshape(threshold_map,r_num,t_num);
-tof_map = zeros(r_num,t_num/2);
-for transmit_i = t_num/2+1:t_num
-    for receive_j = 1:r_num
-        ind_upper_threshold = (rfdata_abs(:,receive_j,transmit_i)>threshold_map(receive_j,transmit_i));
-        k = find(ind_upper_threshold, 1 ) - offset;
-        tof_map(receive_j,transmit_i) = k *dt;
+tof_map = zeros(r_num/2,t_num/2);
+    for transmit_i = 1:t_num/2
+        for receive_j = 1:r_num/2
+            [~,ind_max] = max(rfdata_abs(:,receive_j,transmit_i+t_num/2));
+            ind_threshold = ind_max;
+            while rfdata_abs(ind_threshold,receive_j,transmit_i+t_num/2) >= threshold_map(receive_j,transmit_i+t_num/2)
+                ind_threshold = ind_threshold -1;
+            end
+            ind_threshold = ind_threshold - offset;
+            tof_map(receive_j,transmit_i) = (ind_threshold - offset)* dt;
+        end
     end
-end
 end
